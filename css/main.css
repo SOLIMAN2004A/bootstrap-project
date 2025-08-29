@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --maincolor: #0a97b0;
+  --seconcolor: #04233b;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.whnHover {
+  transition: all 1s;
+}
+.whnHover:hover,
+.whnHover:active,
+.navbar-nav .nav-link.active {
+  color: var(--maincolor) !important;
+}
+/* nav content start */
+header section {
+  background-color: var(--seconcolor);
+  padding: 9px 0;
+}
+.content_nav {
+  font-size: 12px;
+  a {
+    color: #fff;
+  }
+
+  .navContenticon {
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.navContenticon svg {
+  color: var(--maincolor);
+  font-size: 13px;
+  transition: all 1s;
+
+}
+.content_nav a:hover svg {
+  color: var(--seconcolor);
+}
+
+@media (max-width: 576px) {
+  .content_nav span {
+    display: none;
+  }
+}
+/* nav content end */
+
+
+/* slider_section */
+.slider {
+  min-height: 80vh;
+  position: relative;
+  left: 9rem;
+  top: 9rem;
+  h5 {
+    font-size: 1.5rem;
+  }
+  h5,
+  p {
+    padding: 10px 0px;
+  }
+}
+.slider_section {
+  background-image: linear-gradient(#0c0c0c86, #0c0c0c),
+    url(../images/slider-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  /* color: #FFF; */
+}
+.slider_section button svg {
+  color: rgb(255, 5, 5) !important; /* ده ازاااااااااااااااااااااااس*/
+  font-size: 2rem;
+}
+.carousel-indicators button {
+  width: 15px !important;
+  height: 15px !important;
+  background-color: #fff !important;
+  border-radius: 50%;
+}
+
+.btnCarousel {
+  background-color: var(--maincolor);
+  padding: 0.5rem 2rem;
+  color: #fff;
+  transition: all 1s;
+
+}
+.btnCarousel:hover {
+  background-color: #065968 !important;
+  color: #fff !important;
+}
+
+@media (width<=576px) {
+  .slider {
+    left: 1rem;
+    top: 6rem;
+  }
+}
+
+/* Services css code  */
+
+.Title {
+  color: var(--maincolor);
+}
+.box {
+  background-color: #f8f8f9;
+}
+
+.box .linkBox {
+  color: var(--seconcolor);
+}
+.box .linkBox:hover {
+  color: var(--maincolor);
+}
+.aboutImg .imgBox {
+  padding: 2rem;
+}
+.aboutImg .imgBox {
+  position: relative;
+}
+.aboutImg .imgBox::before {
+  content: "";
+  width: 45px;
+  height: 70%;
+  background-color: var(--seconcolor);
+  position: absolute;
+  top: 15%;
+  right: 0;
+  z-index: -1;
+}
+.aboutImg .imgBox::after {
+  content: "";
+  width: 45px;
+  height: 70%;
+  background-color: var(--seconcolor);
+  position: absolute;
+  top: 15%;
+  left: 0;
+  z-index: -1;
+}
+
+.trackShipment {
+  background-image: linear-gradient(#0c0c0c86, #0c0c0c),
+    url(../images/track-bg.jpg);
+  background-size: cover;
+}
+
+.foot {
+  background-color: var(--seconcolor);
+}
